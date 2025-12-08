@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Grand Champion",
+            "color": "blue"
+        },
+        "description": {
+            "text": "You are a master of Color Control, having won 3 rounds in a row.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grant": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "cc:win_entro"
+}

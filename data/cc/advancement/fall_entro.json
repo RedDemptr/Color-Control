@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Free Falling",
+            "color": "yellow"
+        },
+        "description": {
+            "text": "You tried to collect items from a cube in the Entropy gamemode right up until it fell from the sky - with you in tow!",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:anvil"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grant": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "cc:fall_dia"
+}

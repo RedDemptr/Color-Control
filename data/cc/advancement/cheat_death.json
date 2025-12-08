@@ -1,0 +1,25 @@
+{
+  "display": {
+    "title": {
+      "text": "Cheat Death",
+      "color": "yellow"
+    },
+    "description": {
+      "text": "You fell into the void... and then came back!",
+      "color": "gray"
+    },
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "grant": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cc:fall_entro"
+}

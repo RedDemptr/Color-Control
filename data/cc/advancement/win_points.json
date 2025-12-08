@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "First Steps",
+            "color": "green"
+        },
+        "description": {
+            "text": "You won your first Classic match - good work!",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:white_concrete"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grant": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "cc:root"
+}

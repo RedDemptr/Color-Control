@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Undaunted Warrior",
+            "color": "green"
+        },
+        "description": {
+            "text": "Cast into a warzone, your team fought for life and limb and won a round of Deathmatch!",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grant": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "cc:win_points"
+}

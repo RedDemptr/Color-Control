@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Expensive Falling",
+            "color": "yellow"
+        },
+        "description": {
+            "text": "You learned the risk involved in having a full suit of diamond armor on your person the hard way.",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:diamond_chestplate"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grant": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "cc:root"
+}
