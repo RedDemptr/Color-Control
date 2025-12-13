@@ -20,8 +20,8 @@ tellraw @a[team=!Spectators,x=-1008,y=33,z=-1008,dx=4,dy=3,dz=4] {"text":"You ar
 team join Spectators @a[team=!Spectators,x=-1008,y=33,z=-1008,dx=4,dy=3,dz=4]
 clear @a[gamemode=adventure]
 
-execute if score TeamsReady gameSettings matches 0 run data merge block -992 33 -1006 {Text2:'{"text":"Red team is..."}',Text3:'{"text":"Not Ready!","color":"red","clickEvent":{"action":"run_command","value":"function cc:main/lobby/ready/red_ready"}}'}
-execute if score TeamsReady gameSettings matches 0 run data merge block -992 33 -994 {Text2:'{"text":"Blue team is..."}',Text3:'{"text":"Not Ready!","color":"red","clickEvent":{"action":"run_command","value":"function cc:main/lobby/ready/blue_ready"}}'}
+execute if score TeamsReady gameSettings matches 0 run data merge block -992 33 -1006 {front_text:{messages:["","Red team is...",{"text":"Not Ready!","color":"red","click_event":{"action":"run_command","command":"function cc:main/lobby/ready/red_ready"}},""]}} 
+execute if score TeamsReady gameSettings matches 0 run data merge block -992 33 -994 {front_text:{messages:["","Blue team is...",{"text":"Not Ready!","color":"red","click_event":{"action":"run_command","command":"function cc:main/lobby/ready/blue_ready"}},""]}}
 
 execute if block -996 32 -996 minecraft:blue_stained_glass run teleport @a[team=Blue,x=-1008,y=30,z=-1008,dx=16,dy=4,dz=12] -994 32 -994
 execute if block -996 32 -996 minecraft:blue_stained_glass run teleport @a[team=Blue,x=-1008,y=30,z=-1008,dx=12,dy=4,dz=16] -994 32 -994

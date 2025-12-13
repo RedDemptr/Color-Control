@@ -47,7 +47,7 @@ setblock 970 47 970 minecraft:gray_concrete
 	# Rotates armor stands.
 execute as @e[type=block_display,tag=display] at @s run tp @s ~ ~ ~ ~0.2 ~
 
-#tnt
+#tnt TODO verify it knows whos team is what here
 execute as @e[type=tnt,nbt={fuse:20s}] at @s if entity @e[type=marker,scores={cloudType=3..},distance=..5] run fill ~2 ~-2 ~2 ~-2 ~2 ~-2 minecraft:white_concrete replace minecraft:red_concrete
 execute as @e[type=tnt,nbt={fuse:20s}] at @s if entity @e[type=marker,scores={cloudType=3..},distance=..5] run fill ~2 ~-2 ~2 ~-2 ~2 ~-2 minecraft:white_concrete replace minecraft:blue_concrete
 execute at @e[type=tnt,nbt={fuse:20s}] run summon creeper ~ ~100 ~ {Fuse:1,ignited:1b}

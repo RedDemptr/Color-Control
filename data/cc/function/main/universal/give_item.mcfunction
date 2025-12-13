@@ -1,0 +1,2 @@
+$execute if entity @s[nbt={data:{"item":"$(item)"}}] positioned ~-2 ~3 ~-2 run give @a[team=$(team),dx=4,dy=0,dz=4] minecraft:$(item) 1
+$execute if entity @s[nbt={data:{"effect":"$(effect)"}}] positioned ~-2 ~3 ~-2 run effect give @a[team=$(team),dx=4,dy=0,dz=4] $(effect) 15 0

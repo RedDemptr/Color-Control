@@ -31,8 +31,7 @@ execute if score StartGame gameSettings matches 80 run fill -996 32 -1008 -992 3
 execute if score StartGame gameSettings matches 80 run fill -996 32 -1008 -992 33 -992 minecraft:air replace minecraft:red_stained_glass
 execute if score StartGame gameSettings matches 80 run fill -996 32 -1008 -992 33 -992 minecraft:air replace minecraft:blue_stained_glass
 execute if score StartGame gameSettings matches 80 run function cc:main/triggers/startgame
-execute if score StartGame gameSettings matches 80 run scoreboard players set StartGame gameSettings 0
 
 
 # PrepTrigger
-execute if entity @e[type=marker,tag=startDelay,nbt={Age:19}] run function cc:triggers/start_game
+execute if score StartGame gameSettings matches 1 run function cc:triggers/start_game

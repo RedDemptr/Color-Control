@@ -47,6 +47,7 @@ scoreboard players set #20 redMain 20
 kill @e[type=marker,tag=lobbyCube]
 summon minecraft:marker -1016 29 -1000 {Tags:["lobbyCube"]}
 
+forceload add -50 -50 50 50
 tellraw @a[tag=debug] {"text":"init.mcfunction ran successfully.","color":"green"}
 team add Red
 team add Blue
