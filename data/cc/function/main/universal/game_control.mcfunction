@@ -59,11 +59,11 @@ give @a[team=!Spectators,scores={respawnTrack=1}] minecraft:wooden_pickaxe[encha
 item replace entity @a[team=!Spectators,scores={respawnTrack=1}] armor.feet with minecraft:iron_boots[enchantments={"protection":100,"binding_curse":1,"vanishing_curse":1},unbreakable={},custom_name="Spawn Boots",attribute_modifiers=[{id:"knockback_resistance",type:"knockback_resistance",amount:100,operation:"add_value"},{id:"movement_speed",type:"movement_speed",amount:.2,operation:"add_value"}]] 1 
 clear @a[scores={respawnTrack=100}] iron_boots[minecraft:unbreakable={}]
  	# Tests for a full team having left.
-execute if score RedPlayers gameSettings matches 0 run function cc:main/triggers/blue_winforfeit
-execute if score RedPlayers gameSettings matches 0 run function cc:main/triggers/game_end
+execute if score RedPlayers gameSettings matches 0 unless score disableGameEnd gameSettings matches 1 run function cc:main/triggers/blue_winforfeit
+execute if score RedPlayers gameSettings matches 0 unless score disableGameEnd gameSettings matches 1 run function cc:main/triggers/game_end
 
-execute if score BluePlayers gameSettings matches 0 run function cc:main/triggers/red_winforfeit
-execute if score BluePlayers gameSettings matches 0 run function cc:main/triggers/game_end
+execute if score BluePlayers gameSettings matches 0 unless score disableGameEnd gameSettings matches 1 run function cc:main/triggers/red_winforfeit
+execute if score BluePlayers gameSettings matches 0 unless score disableGameEnd gameSettings matches 1 run function cc:main/triggers/game_end
 
 # Advancements
 execute as @a[gamemode=survival] at @s run tag @s[y=20,dy=10] add testCD
